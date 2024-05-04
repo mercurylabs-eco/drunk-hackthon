@@ -1,0 +1,19 @@
+{
+  "name": "viti-hackthon",
+  "version": "1.0.0",
+  "description": "viti hackthon project",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "deploy_drunk:base": "source .env.base && forge script script/DeployDrunk.sol --rpc-url $RPC_URL --via-ir --private-key $PRIVATE_KEY --broadcast --verify --delay 30 --retries 100 --etherscan-api-key $ETHERSCAN_API_KEY -vvvv"
+  },
+  "keywords": [
+    "meme",
+    "socialFi"
+  ],
+  "author": "mertticc",
+  "license": "ISC"
+}
